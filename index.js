@@ -11,18 +11,13 @@ const max = (array) => {
     return array[0];
   }
 
-  let i = 0;
-
-  if (array > 0) {
-    i++;
-  }
-
+  const i = 0;
   const firstValue = array[i];
   const secondValue = max(array.splice(1));
 
   return Math.max(firstValue, secondValue);
 };
 
-const test = [15, -78, 1, 8, 10, 2, 88, 16];
+const test = [15, -78, 258, 1, 8, 10, 2, 88, 16, 100];
 
 console.log(max(test)); /// 88
