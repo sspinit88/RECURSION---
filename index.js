@@ -11,7 +11,7 @@ const max = (array, i, length) => {
     return array[0];
   }
 
-  return Math.min(array[i], max(array, i += 1, length - 1));
+  return Math.max(array[i], max(array, i += 1, length - 1));
 };
 
 const test = [15, -78, 1, 8, 10, 2, 88, 16];
