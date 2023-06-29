@@ -33,6 +33,7 @@ const max = (array) => {
 
   // console.log(firstValue, secondValue);
 
+  /// return Math.min(firstValue, secondValue);
   return Math.max(firstValue, secondValue);
 };
 
